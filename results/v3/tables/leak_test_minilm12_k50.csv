@@ -1,0 +1,16 @@
+budget,policy,decisions_identical,final_scores_identical
+0.25,gainer,True,True
+0.25,current_rank,True,True
+0.25,boundary,True,True
+0.35,gainer,True,True
+0.35,current_rank,True,True
+0.35,boundary,True,True
+0.5,gainer,True,True
+0.5,current_rank,True,True
+0.5,boundary,True,True
+0.65,gainer,True,True
+0.65,current_rank,True,True
+0.65,boundary,True,True
+0.8,gainer,True,True
+0.8,current_rank,True,True
+0.8,boundary,True,True

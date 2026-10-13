@@ -1,0 +1,7 @@
+method,queries,mean_abs_ndcg_diff
+CurrentRank@0.35,280,0.0
+CurrentRank@0.5,280,0.0
+CurrentRank@0.65,280,0.0
+GAINER@0.35,280,0.0
+GAINER@0.5,280,0.0
+GAINER@0.65,280,0.0

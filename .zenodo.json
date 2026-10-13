@@ -24,5 +24,14 @@
     "adaptive computation",
     "efficient inference",
     "pre-registration"
-  ]
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23340638",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    }
+  ],
+  "version": "1.0.0"
 }

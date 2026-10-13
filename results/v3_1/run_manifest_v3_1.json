@@ -1,0 +1,24 @@
+{
+  "finished_utc": "2026-10-05T15:45:54.834870+00:00",
+  "prereg_sha256": "1f4050281d4dbf8a27543aa6672f7295ea86880db50d1aecea2818ec52ef11b1",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.18.0",
+    "sentence_transformers": "6.1.0"
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gain_mode": {
+    "ettin68m": "sigmoid",
+    "minilm12": "sigmoid"
+  },
+  "gates": [
+    "G5  Label-free VOC beats the score cascade (H4): delta = -0.0163 [-0.0197, -0.0130], Holm p = 0.0000 -> FAIL: report VOC as a negative result",
+    "G6  Calibrated values make cross-query pooling work (H5): delta = -0.0063 [-0.0117, -0.0012], Holm p = 0.0343 -> FAIL: pooling stays a negative result",
+    "G7  VOC terms improve the learned controller (H6): delta = -0.0001 [-0.0021, +0.0018], Holm p = 0.9351 -> FAIL: keep GAINER as the main method",
+    "Label-free VOC recovers -92% of GAINER's gain over Current Rank at 50% compute",
+    "Replication on MiniLM-L12: VOC vs CurrentRank: delta = -0.0148, p = 0.0000",
+    "Replication on MiniLM-L12: VOC pooled vs VOC: delta = -0.0050, p = 0.0486",
+    "Replication on MiniLM-L12: GAINER+VOC vs GAINER: delta = -0.0009, p = 0.3096"
+  ],
+  "raw_files": 140
+}

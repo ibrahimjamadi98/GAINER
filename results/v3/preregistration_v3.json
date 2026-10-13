@@ -1,0 +1,50 @@
+{
+  "alpha": 0.05,
+  "backbones": [
+    "ettin68m",
+    "minilm12"
+  ],
+  "budgets": [
+    0.25,
+    0.35,
+    0.5,
+    0.65,
+    0.8,
+    1.0
+  ],
+  "created_utc": "2026-10-05T13:37:58.270176+00:00",
+  "datasets": [
+    "scifact",
+    "fiqa",
+    "nfcorpus",
+    "arguana",
+    "scidocs",
+    "trec-covid",
+    "webis-touche2020"
+  ],
+  "main_backbone": "ettin68m",
+  "main_config": {
+    "balanced": true,
+    "target": "mix",
+    "training": "dagger"
+  },
+  "metric": "nDCG@10, linear gain, queries as in BEIR test qrels, self-matches removed",
+  "permutations": 100000,
+  "primary_budget": 0.5,
+  "primary_family": {
+    "H1": "GAINER (main config, per-query budget) has higher macro nDCG@10 than Current Rank (score-based cascade, same survival schedule) at the primary budget on the main backbone.",
+    "H2": "GAINER has higher macro nDCG@10 than SEE (EPT, exit before block 0, delta calibrated on source queries to the same normalized compute) at the primary budget on the main backbone.",
+    "H3": "Cross-query pooled GAINER (pool size 32) has higher macro nDCG@10 than per-query GAINER at the primary budget on the main backbone."
+  },
+  "secondary": "per-dataset tests (Holm within dataset family), second-backbone replication of H1, ablations (descriptive), measured latency (descriptive)",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "sha256": "e77241073ba22c17b36151adcffacaf3e7f47ff36b3fd38cbebae413026b4746",
+  "test": "two-sided paired sign-flip randomization test on per-query differences (seed-averaged), stratified by dataset, statistic = macro mean difference; Holm correction over H1-H3; stratified percentile bootstrap 95% CI",
+  "top_k": 50
+}

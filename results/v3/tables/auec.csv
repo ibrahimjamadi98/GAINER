@@ -1,0 +1,113 @@
+backbone,dataset,method,AUEC,budget_points,cost_range
+ettin68m,scifact,GAINER,0.7344146370887756,6,0.25-1.00
+ettin68m,scifact,GAINER (G=32),0.7332605719566345,6,0.25-1.00
+ettin68m,scifact,CurrentRank,0.7118475437164307,6,0.25-1.00
+ettin68m,scifact,FixedResidual,0.7206067442893982,6,0.25-1.00
+ettin68m,scifact,SEE,0.7289173603057861,6,0.25-1.00
+ettin68m,scifact,Patience,0.689967691898346,5,0.42-1.00
+ettin68m,scifact,Random,0.612779974937439,6,0.25-1.00
+ettin68m,scifact,Oracle,0.7830948829650879,6,0.25-1.00
+ettin68m,fiqa,GAINER,0.3612505793571472,6,0.25-1.00
+ettin68m,fiqa,GAINER (G=32),0.3511914312839508,6,0.25-1.00
+ettin68m,fiqa,CurrentRank,0.3385098874568939,6,0.25-1.00
+ettin68m,fiqa,FixedResidual,0.34481868147850037,6,0.25-1.00
+ettin68m,fiqa,SEE,0.33994781970977783,6,0.25-1.00
+ettin68m,fiqa,Patience,0.31740474700927734,5,0.40-1.00
+ettin68m,fiqa,Random,0.2754956781864166,6,0.25-1.00
+ettin68m,fiqa,Oracle,0.4459657669067383,6,0.25-1.00
+ettin68m,nfcorpus,GAINER,0.3336581885814667,6,0.25-1.00
+ettin68m,nfcorpus,GAINER (G=32),0.3317246437072754,6,0.25-1.00
+ettin68m,nfcorpus,CurrentRank,0.31752392649650574,6,0.25-1.00
+ettin68m,nfcorpus,FixedResidual,0.32897090911865234,6,0.25-1.00
+ettin68m,nfcorpus,SEE,0.32718148827552795,6,0.27-1.00
+ettin68m,nfcorpus,Patience,0.3199837803840637,5,0.39-1.00
+ettin68m,nfcorpus,Random,0.29033225774765015,6,0.25-1.00
+ettin68m,nfcorpus,Oracle,0.4149938225746155,6,0.25-1.00
+ettin68m,arguana,GAINER,0.5740571618080139,6,0.25-1.00
+ettin68m,arguana,GAINER (G=32),0.5645077228546143,6,0.25-1.00
+ettin68m,arguana,CurrentRank,0.5464960336685181,6,0.25-1.00
+ettin68m,arguana,FixedResidual,0.4991356134414673,6,0.25-1.00
+ettin68m,arguana,SEE,0.5600184202194214,6,0.24-1.00
+ettin68m,arguana,Patience,0.49185246229171753,5,0.47-1.00
+ettin68m,arguana,Random,0.40034475922584534,6,0.25-1.00
+ettin68m,arguana,Oracle,0.7356763482093811,6,0.25-1.00
+ettin68m,scidocs,GAINER,0.1655154526233673,6,0.25-1.00
+ettin68m,scidocs,GAINER (G=32),0.1641734391450882,6,0.25-1.00
+ettin68m,scidocs,CurrentRank,0.16195525228977203,6,0.25-1.00
+ettin68m,scidocs,FixedResidual,0.1684892177581787,6,0.25-1.00
+ettin68m,scidocs,SEE,0.15637385845184326,6,0.24-1.00
+ettin68m,scidocs,Patience,0.16364173591136932,5,0.40-1.00
+ettin68m,scidocs,Random,0.1416943073272705,6,0.25-1.00
+ettin68m,scidocs,Oracle,0.2593737840652466,6,0.25-1.00
+ettin68m,trec-covid,GAINER,0.756360650062561,6,0.25-1.00
+ettin68m,trec-covid,GAINER (G=32),0.7397776246070862,6,0.25-1.00
+ettin68m,trec-covid,CurrentRank,0.7467842698097229,6,0.25-1.00
+ettin68m,trec-covid,FixedResidual,0.7349565029144287,6,0.25-1.00
+ettin68m,trec-covid,SEE,0.7429941296577454,6,0.26-1.00
+ettin68m,trec-covid,Patience,0.7528249621391296,5,0.47-1.00
+ettin68m,trec-covid,Random,0.7154428958892822,6,0.25-1.00
+ettin68m,trec-covid,Oracle,0.8854345083236694,6,0.25-1.00
+ettin68m,webis-touche2020,GAINER,0.33518752455711365,6,0.25-1.00
+ettin68m,webis-touche2020,GAINER (G=32),0.33071720600128174,6,0.25-1.00
+ettin68m,webis-touche2020,CurrentRank,0.33246049284935,6,0.25-1.00
+ettin68m,webis-touche2020,FixedResidual,0.34445875883102417,6,0.25-1.00
+ettin68m,webis-touche2020,SEE,0.3272700607776642,6,0.25-1.00
+ettin68m,webis-touche2020,Patience,0.34158846735954285,5,0.44-1.00
+ettin68m,webis-touche2020,Random,0.3037456274032593,6,0.25-1.00
+ettin68m,webis-touche2020,Oracle,0.5440621972084045,6,0.25-1.00
+minilm12,scifact,GAINER,0.6795892715454102,6,0.26-1.00
+minilm12,scifact,GAINER (G=32),0.6794623732566833,6,0.25-1.00
+minilm12,scifact,CurrentRank,0.5686889886856079,6,0.26-1.00
+minilm12,scifact,FixedResidual,0.6366569399833679,6,0.25-1.00
+minilm12,scifact,SEE,0.6937538981437683,6,0.25-1.00
+minilm12,scifact,Patience,0.6442194581031799,5,0.36-1.00
+minilm12,scifact,Random,0.5131988525390625,6,0.26-1.00
+minilm12,scifact,Oracle,0.7350926995277405,6,0.26-1.00
+minilm12,fiqa,GAINER,0.3123463988304138,6,0.26-1.00
+minilm12,fiqa,GAINER (G=32),0.3131597340106964,6,0.25-1.00
+minilm12,fiqa,CurrentRank,0.26677206158638,6,0.26-1.00
+minilm12,fiqa,FixedResidual,0.2918719947338104,6,0.25-1.00
+minilm12,fiqa,SEE,0.30493056774139404,6,0.24-1.00
+minilm12,fiqa,Patience,0.28180402517318726,5,0.36-1.00
+minilm12,fiqa,Random,0.23931419849395752,6,0.26-1.00
+minilm12,fiqa,Oracle,0.3915194869041443,6,0.26-1.00
+minilm12,nfcorpus,GAINER,0.3302844166755676,6,0.26-1.00
+minilm12,nfcorpus,GAINER (G=32),0.32951003313064575,6,0.25-1.00
+minilm12,nfcorpus,CurrentRank,0.3053463101387024,6,0.26-1.00
+minilm12,nfcorpus,FixedResidual,0.31918370723724365,6,0.25-1.00
+minilm12,nfcorpus,SEE,0.3382124900817871,6,0.29-1.00
+minilm12,nfcorpus,Patience,0.31244736909866333,5,0.35-1.00
+minilm12,nfcorpus,Random,0.2825940251350403,6,0.26-1.00
+minilm12,nfcorpus,Oracle,0.415681928396225,6,0.26-1.00
+minilm12,arguana,GAINER,0.4115906357765198,6,0.26-1.00
+minilm12,arguana,GAINER (G=32),0.41517943143844604,6,0.25-1.00
+minilm12,arguana,CurrentRank,0.339487224817276,6,0.26-1.00
+minilm12,arguana,FixedResidual,0.37397944927215576,6,0.25-1.00
+minilm12,arguana,SEE,0.3790532648563385,6,0.24-1.00
+minilm12,arguana,Patience,0.3226734399795532,5,0.36-1.00
+minilm12,arguana,Random,0.2689988315105438,6,0.26-1.00
+minilm12,arguana,Oracle,0.5615671277046204,6,0.26-1.00
+minilm12,scidocs,GAINER,0.16426566243171692,6,0.26-1.00
+minilm12,scidocs,GAINER (G=32),0.1643003225326538,6,0.25-1.00
+minilm12,scidocs,CurrentRank,0.13969483971595764,6,0.26-1.00
+minilm12,scidocs,FixedResidual,0.15297070145606995,6,0.25-1.00
+minilm12,scidocs,SEE,0.15845221281051636,6,0.24-1.00
+minilm12,scidocs,Patience,0.15820083022117615,5,0.40-1.00
+minilm12,scidocs,Random,0.13203056156635284,6,0.26-1.00
+minilm12,scidocs,Oracle,0.23439498245716095,6,0.26-1.00
+minilm12,trec-covid,GAINER,0.7112516760826111,6,0.26-1.00
+minilm12,trec-covid,GAINER (G=32),0.7130924463272095,6,0.25-1.00
+minilm12,trec-covid,CurrentRank,0.6969716548919678,6,0.26-1.00
+minilm12,trec-covid,FixedResidual,0.6813826560974121,6,0.25-1.00
+minilm12,trec-covid,SEE,0.7188924551010132,6,0.26-1.00
+minilm12,trec-covid,Patience,0.7059010863304138,5,0.45-1.00
+minilm12,trec-covid,Random,0.6731329560279846,6,0.26-1.00
+minilm12,trec-covid,Oracle,0.8773188591003418,6,0.26-1.00
+minilm12,webis-touche2020,GAINER,0.29428863525390625,6,0.26-1.00
+minilm12,webis-touche2020,GAINER (G=32),0.29019632935523987,6,0.25-1.00
+minilm12,webis-touche2020,CurrentRank,0.28233006596565247,6,0.26-1.00
+minilm12,webis-touche2020,FixedResidual,0.2828200161457062,6,0.25-1.00
+minilm12,webis-touche2020,SEE,0.2950672209262848,6,0.25-1.00
+minilm12,webis-touche2020,Patience,0.2764250338077545,5,0.43-1.00
+minilm12,webis-touche2020,Random,0.2516406774520874,6,0.26-1.00
+minilm12,webis-touche2020,Oracle,0.5065494179725647,6,0.26-1.00

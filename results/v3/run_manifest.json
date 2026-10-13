@@ -1,0 +1,121 @@
+{
+  "finished_utc": "2026-10-05T14:13:56.540329+00:00",
+  "prereg_sha256": "e77241073ba22c17b36151adcffacaf3e7f47ff36b3fd38cbebae413026b4746",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.18.0",
+    "sentence_transformers": "6.1.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "bm25s": "0.3.12"
+  },
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "config": {
+    "DATASETS": [
+      "scifact",
+      "fiqa",
+      "nfcorpus",
+      "arguana",
+      "scidocs",
+      "trec-covid",
+      "webis-touche2020"
+    ],
+    "TOP_K": 50,
+    "EVAL_K": 10,
+    "MAX_LENGTH": 384,
+    "GAIN": "linear",
+    "BUDGETS": [
+      0.25,
+      0.35,
+      0.5,
+      0.65,
+      0.8,
+      1.0
+    ],
+    "PRIMARY_BUDGET": 0.5,
+    "SEEDS": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "MAIN": {
+      "training": "dagger",
+      "target": "mix",
+      "balanced": true
+    },
+    "ABLATIONS": {
+      "offline_training": {
+        "training": "offline"
+      },
+      "onpolicy_no_dagger": {
+        "training": "onpolicy"
+      },
+      "target_one_step": {
+        "target": "one_step"
+      },
+      "target_to_go": {
+        "target": "to_go"
+      },
+      "unbalanced_sources": {
+        "balanced": false
+      }
+    },
+    "POOL_SIZES": [
+      1,
+      8,
+      32
+    ],
+    "POOL_SHUFFLES": 10,
+    "BALANCE_CAP": 600,
+    "SOURCE_VAL_FRACTION": 0.2,
+    "HEAD_HIDDEN": 160,
+    "EXIT_EPOCHS": 25,
+    "RANK_EPOCHS": 30,
+    "PAIRS_PER_GROUP": 32,
+    "MAX_PAIRS_PER_STAGE": 300000,
+    "SEE_EXIT_LAYER": 0,
+    "SEE_K": 10,
+    "PATIENCE_P": 1,
+    "PERMUTATIONS": 100000,
+    "BOOTSTRAP": 10000,
+    "QUICK_TRIAL": false
+  },
+  "backbones": {
+    "ettin68m": {
+      "kind": "st_crossencoder",
+      "name": "cross-encoder/ettin-reranker-68m-v1",
+      "checkpoints": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        19
+      ],
+      "label": "Ettin-68M"
+    },
+    "minilm12": {
+      "kind": "hf_seqcls",
+      "name": "cross-encoder/ms-marco-MiniLM-L12-v2",
+      "checkpoints": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "label": "MiniLM-L12"
+    }
+  },
+  "raw_result_files": 70,
+  "gates": [
+    "G1  Learned allocation beats the score cascade (H1): delta = +0.0178 [+0.0125, +0.0233], Holm p = 0.0000 -> PASS",
+    "G2  Cross-query pooling adds >= +0.005 (H3): delta = -0.0080, Holm p = 0.0001 -> report pooling as an extension",
+    "G3  GAINER vs SEE at matched compute (H2): delta = +0.0154, Holm p = 0.0001 -> PASS",
+    "G4  Replication on MiniLM-L12: delta = +0.0493, p = 0.0000 -> PASS"
+  ]
+}

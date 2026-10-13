@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or its results, please cite the associated paper."
 title: "GAINER: Gain-Aware Allocation of Transformer Depth for Efficient Cross-Encoder Re-Ranking"
 type: software
+version: "1.0.0"
+date-released: "2026-10-13"
 repository-code: "https://github.com/ibrahimjamadi98/GAINER"
 license: MIT
 authors:
@@ -32,3 +34,4 @@ preferred-citation:
       given-names: "Syahid"
   year: 2026
   notes: "Preprint. Submitted to the International Journal of Advanced Computer Science and Applications"
+  doi: "10.5281/zenodo.23340638"

@@ -1,0 +1,8 @@
+dataset,GAINER G=32,VOC G=32
+arguana,-0.008,-0.025
+fiqa,0.059,-0.082
+nfcorpus,0.165,0.039
+scidocs,-0.064,0.052
+scifact,0.044,-0.097
+trec-covid,-0.099,-0.133
+webis-touche2020,-0.16,0.177

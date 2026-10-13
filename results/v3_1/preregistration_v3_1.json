@@ -1,0 +1,53 @@
+{
+  "alpha": 0.05,
+  "backbones": [
+    "ettin68m",
+    "minilm12"
+  ],
+  "budgets": [
+    0.25,
+    0.35,
+    0.5,
+    0.65,
+    0.8,
+    1.0
+  ],
+  "builds_on": "GAINER v3 (pre-registration sha256 in v3/results/preregistration_v3.json)",
+  "created_utc": "2026-10-05T14:56:52.592149+00:00",
+  "datasets": [
+    "scifact",
+    "fiqa",
+    "nfcorpus",
+    "arguana",
+    "scidocs",
+    "trec-covid",
+    "webis-touche2020"
+  ],
+  "main_backbone": "ettin68m",
+  "permutations": 100000,
+  "primary_budget": 0.5,
+  "primary_family": {
+    "H4": "VOC allocation (label-free, per-query budget) has higher macro nDCG@10 than Current Rank at the primary budget (main backbone).",
+    "H5": "VOC with a pooled budget (G=32) has higher macro nDCG@10 than per-query VOC at the primary budget (main backbone).",
+    "H6": "GAINER+VOC (v3 controller with the VOC terms as extra inputs) has higher macro nDCG@10 than GAINER at the primary budget (main backbone)."
+  },
+  "secondary": "replication on the second backbone; VOC vs GAINER (label-free vs label-trained); ablation of the VOC horizon (next block only, to final only); calibration of exit-head uncertainty; measured latency",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "sha256": "1f4050281d4dbf8a27543aa6672f7295ea86880db50d1aecea2818ec52ef11b1",
+  "test": "two-sided paired sign-flip randomization test, stratified by dataset, statistic = macro mean difference of seed-averaged per-query nDCG@10; Holm over H4-H6; stratified bootstrap 95% CI",
+  "top_k": 50,
+  "voc_definition": {
+    "exit_heads": "v3 mean heads (unchanged) + variance heads trained by Gaussian NLL on source data, variance scale calibrated on source validation queries",
+    "expectation": "32 equal-probability standard-normal quantiles (midpoint rule)",
+    "gain": "expected relevance of a candidate = E[g(s)], g = sigmoid for logit scores, identity for scores in [0,1]; probit approximation under N(mu, sigma^2)",
+    "measurement_model": "one block shrinks variance by the source-calibrated ratio rho_s; the final block resolves it fully",
+    "priority": "max(VOC_next_block / layers_in_block, VOC_to_final / remaining_layers), divided by the query's expected ideal DCG@10",
+    "utility": "DCG@10 of the ranking by current means, using expected gains (label-free)"
+  }
+}

@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Ablations: macro nDCG@10 by normalized compute budget.}
+\label{tab:ablations}
+\begin{tabular}{lrrrrrr}
+\toprule
+budget & 0.250000 & 0.350000 & 0.500000 & 0.650000 & 0.800000 & 1.000000 \\
+name &  &  &  &  &  &  \\
+\midrule
+CurrentRank (reference) & 0.3496 & 0.4090 & 0.4489 & 0.4715 & 0.4774 & 0.4828 \\
+GAINER: main & 0.4076 & 0.4390 & 0.4632 & 0.4733 & 0.4801 & 0.4828 \\
+GAINER: offline_training & 0.3928 & 0.4304 & 0.4469 & 0.4625 & 0.4702 & 0.4828 \\
+GAINER: onpolicy_no_dagger & 0.4095 & 0.4375 & 0.4657 & 0.4759 & 0.4808 & 0.4828 \\
+GAINER: target_one_step & 0.4095 & 0.4440 & 0.4628 & 0.4768 & 0.4818 & 0.4828 \\
+GAINER: target_to_go & 0.4099 & 0.4424 & 0.4639 & 0.4759 & 0.4800 & 0.4828 \\
+GAINER: unbalanced_sources & 0.4115 & 0.4423 & 0.4673 & 0.4765 & 0.4789 & 0.4828 \\
+\bottomrule
+\end{tabular}
+\end{table}
