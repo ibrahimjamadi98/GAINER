@@ -1,0 +1,28 @@
+{
+  "upload_type": "software",
+  "title": "GAINER: Gain-Aware Allocation of Transformer Depth for Efficient Cross-Encoder Re-Ranking (code and results)",
+  "description": "<p>Code and registered runs of the paper <em>GAINER: Gain-Aware Allocation of Transformer Depth for Efficient Cross-Encoder Re-Ranking</em> (I. Mohd Jamadi and S. Anuar, preprint, 2026; submitted to the International Journal of Advanced Computer Science and Applications).</p><p>The two Google Colab notebooks run the leave-one-dataset-out evaluation on seven BEIR datasets with two cross-encoder backbones and five seeds: the main registered run (hypotheses H1–H3, pre-registration SHA-256 e77241073ba22c17b36151adcffacaf3e7f47ff36b3fd38cbebae413026b4746) and the second registered family on value-of-computation allocation (H4–H6, SHA-256 1f4050281d4dbf8a27543aa6672f7295ea86880db50d1aecea2818ec52ef11b1). Both are saved with the outputs of their registered runs. No dataset is redistributed.</p>",
+  "creators": [
+    {
+      "name": "Mohd Jamadi, Ibrahim",
+      "affiliation": "Faculty of Artificial Intelligence, Universiti Teknologi Malaysia",
+      "orcid": "0009-0007-7571-3354"
+    },
+    {
+      "name": "Anuar, Syahid",
+      "affiliation": "Faculty of Artificial Intelligence, Universiti Teknologi Malaysia",
+      "orcid": "0000-0001-7869-0257"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "information retrieval",
+    "neural re-ranking",
+    "cross-encoder",
+    "early exit",
+    "adaptive computation",
+    "efficient inference",
+    "pre-registration"
+  ]
+}

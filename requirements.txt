@@ -1,0 +1,8 @@
+# Package versions of the registered runs (Google Colab provides torch, numpy, pandas, scipy and matplotlib)
+transformers==5.18.0
+sentence-transformers==6.1.0
+bm25s[core]==0.3.12
+PyStemmer==3.1.0
+pytrec_eval-terrier==0.5.10
+pyarrow
+jinja2
