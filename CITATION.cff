@@ -4,6 +4,7 @@ title: "GAINER: Gain-Aware Allocation of Transformer Depth for Efficient Cross-E
 type: software
 version: "1.0.0"
 date-released: "2026-10-13"
+doi: "10.5281/zenodo.23341180"
 repository-code: "https://github.com/ibrahimjamadi98/GAINER"
 license: MIT
 authors:

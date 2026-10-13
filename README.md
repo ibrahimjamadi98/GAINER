@@ -1,5 +1,7 @@
 # GAINER: Gain-Aware Allocation of Transformer Depth for Efficient Cross-Encoder Re-Ranking
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23341180.svg)](https://doi.org/10.5281/zenodo.23341180)
+
 This repository contains the code and the registered runs of the paper
 
 > I. Mohd Jamadi and S. Anuar, "GAINER: Gain-Aware Allocation of Transformer Depth for Efficient Cross-Encoder Re-Ranking," preprint, 2026. Submitted to the International Journal of Advanced Computer Science and Applications (IJACSA).
@@ -40,6 +42,9 @@ The same implementation is used without modification, with a multilingual data l
 The paper is available as a preprint on Zenodo: [doi:10.5281/zenodo.23340638](https://doi.org/10.5281/zenodo.23340638).
 
 ## Citation
+
+Code and results: Zenodo, [doi:10.5281/zenodo.23341180](https://doi.org/10.5281/zenodo.23341180) (all versions).
+
 
 ```bibtex
 @misc{mohdjamadi2026gainer,
